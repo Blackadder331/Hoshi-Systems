@@ -1,0 +1,91 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+    --dark-color: #0d0d0d;
+    --light-color: #eeeeee;
+    --brand-green: #00e745;
+} 
+
+
+h1{
+    font-size: 5rem;
+}
+
+
+body {
+    background-color: var(--dark-color);
+    color: var(--dark-color);
+}
+
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--brand-green);
+    padding: 5rem;
+    margin: 5rem;
+    border-radius: 5rem;
+}
+
+nav ol {
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    margin-left: 2rem;
+}
+
+/* Add 01, 02, 03 numbering convention */
+ol {
+    /*list-style-type:decimal-leading-zero;*/
+    list-style: none;
+    padding-left: 0px;
+    counter-reset: item;
+}
+  
+ol>li {
+    display: table;
+    counter-increment: item;
+}
+
+li:before {
+    counter-increment: li;
+    content: counter(item, decimal-leading-zero);
+    padding-right: .5rem;
+} 
+
+
+/* Hero image section */
+.hero{
+    background-color: var(--brand-green);
+    height: 40rem;
+    padding: 5rem;
+    margin: 5rem;
+    border-radius: 5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info{
+    position: absolute;
+}
+
+.info h1 {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.info p{
+    position: relative;
+}
