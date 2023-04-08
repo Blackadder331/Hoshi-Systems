@@ -24,7 +24,7 @@ body {
 }
 
 
-
+/* Navigation */
 nav{
     display: flex;
     flex-direction: row;
@@ -35,16 +35,6 @@ nav{
     border-radius: 5rem;
 
 }
-
-/* nav ol {
-    display: flex;
-    flex-direction: row;
-} */
-
-/* nav li {
-    margin-left: 2rem;
-    font-family: Supply;
-} */
 
 /* Add 01, 02, 03 numbering convention */
 ol {
@@ -63,46 +53,13 @@ li:before {
     counter-increment: li;
     content: counter(item, decimal-leading-zero);
     padding-right: .5rem;
-    padding-left: 2.5rem;
+    padding-left: 7.5rem;
     font-family: Supply;
 } 
 
 
-/* Hero image section */
-.hero{
-    background-color: var(--brand-green);
-    height: 40rem;
-    padding: 5rem;
-    margin: 5rem;
-    border-radius: 5rem;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-
-    z-index: -1;
-    position: relative;
-}
-
-.info{
-    position: absolute;
-    z-index: 1;
-}
-
-.info h1 {
-    position: relative;
-    margin-bottom: 2.5rem;
-}
-
-.info p{
-    position: relative;
-}
-
-
 /* Hamburger code */
- a {color: inherit;}
+a {color: inherit;}
 
 #menu__toggle {
     opacity: 0;
@@ -173,14 +130,13 @@ overflow: hidden;
 transition: height 0.5s ease-in;
 }
 
-
 .menu__box {
     position: relative;
     width: auto;
     display: flex;
     height: auto;
     margin: 0;
-    padding: 2.5rem;
+    padding: 6rem 2.5rem 2.5rem 2.5rem;
     list-style: none;
     background-color: var(--brand-green);
     flex-direction: column;
@@ -192,7 +148,7 @@ transition: height 0.5s ease-in;
 .menu__item {
 display: block;
 width: 100%;
-padding: 2.5rem 0 0 2.5rem;
+padding: 2.5rem 0 0 7.5rem;
 font-size: 5rem;
 font-weight: 600;
 text-decoration: none;
@@ -200,10 +156,83 @@ text-decoration: none;
 transition: background-color 0.25s;
 }
 .menu__item:hover {
-color: #CFD8DC;
+color: var(--light-color);
 }
 
 
 #menu__toggle:checked ~ .menu__container {
 height: 100%;
+}
+
+
+
+/* Hero image section */
+.hero{
+    background-color: var(--brand-green);
+    height: 40rem;
+    padding: 5rem;
+    margin: 5rem;
+    border-radius: 5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    z-index: -1;
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    z-index: 1;
+}
+
+.info h1 {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.info p{
+    position: relative;
+}
+
+
+
+/* MOBILE */
+@media screen and (max-width:1200px) {
+    nav{
+        padding: 2.5rem;
+        margin: 2.5rem;
+    }
+
+    .hero{
+        height: 40rem;
+        padding: 2.5rem;
+        margin: 2.5rem;
+    }
+
+    .hamburger-menu {
+        padding-right: 3.25rem;
+    }
+
+    .menu__item {
+        padding: 2.5rem 0 0 1rem;
+        font-size: 3rem;
+    }
+
+    li:before {
+        padding-right: .5rem;
+        padding-left: 1rem;
+    } 
+
+    .menu__box {
+        padding-top: 7.5rem;
+    }
+
+    body{
+        padding-top: 7.5rem;
+    }
+
 }
