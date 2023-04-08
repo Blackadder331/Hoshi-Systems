@@ -313,6 +313,43 @@ height: 100%;
 }
 
 
+.stat-container{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+.stats-right{
+    margin-right: 25%;
+}
+
+
+
+/* Animations */
+.blink_me {
+    animation: blinker 2s linear infinite;
+  }
+  
+@keyframes blinker {
+    0%{
+        opacity: 1;
+    }
+    20% {
+      opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+/* Counter */
+
+
 /* DESKTOP XXL */
 @media screen and (min-width: 1600px) {
     body{
