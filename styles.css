@@ -15,7 +15,17 @@ html {
 
 h1{
     font-size: 5rem;
+    line-height: 1.05;
 }
+
+/* h2 {
+    font-family: Supply;
+} */
+
+p {
+    font-family: Supply;
+}
+
 
 
 body {
@@ -178,7 +188,7 @@ height: 100%;
 .hero{
     background-color: var(--brand-green);
     height: 40rem;
-    padding: 5rem;
+    /* padding: 5rem; */
     margin: 5rem;
     border-radius: 5rem;
 
@@ -190,16 +200,112 @@ height: 100%;
 
     z-index: -1;
     position: relative;
+
+    /* background-image: url(./images/ship-bit-1.png); */
+    background-position: center;
+    background-size: cover;
 }
+.hero-img{
+    height: 40rem;
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+    border-radius: 5rem;
+
+    z-index: -1;
+    position: relative;
+
+    background-image: url(./images/ship-invert.png);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+
+/* Two columns */
+.second {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    padding-top: 0;
+    gap: 5rem;
+}
+
+.third {
+    margin-top: 5rem;
+}
+.two-col {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--brand-green);
+}
+
+.left{
+    margin-left: 5rem;
+    background-color: var(--brand-green);
+}
+
+.left-img{
+    background-image: url(./images/alien-bit-1.png);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+
+.left-img2{
+    background-image: url(./images/crew-bit-1.png);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+
+
+.right{
+    margin-right: 5rem;
+}
+.right-img{
+    background-image: url(./images/crew-bit-2.png);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+.right-img2{
+    background-image: url(./images/crew-bit-3.png);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+
+
+/* Map */
+
+.map-img{
+    background-image: url(./images/map-bit.png);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    width: 50%;
+    /* left: 50%; */
+    border-radius: 5rem 0 0 5rem;
+}
+
+.map-info {
+    width: 40%;
+    left: 57%;
+}
+
+
 
 .info{
     position: absolute;
     z-index: 1;
+    padding-left: 5rem;
 }
 
 .info h1 {
     position: relative;
     margin-bottom: 2.5rem;
+    text-shadow: 1px 1px 2px var(--brand-green), 0 0 1em var(--brand-green), 0 0 0.2em var(--brand-green);
 }
 
 .info p{
@@ -207,6 +313,17 @@ height: 100%;
 }
 
 
+/* DESKTOP XXL */
+@media screen and (min-width: 1600px) {
+    body{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .menu__box {
+        padding-left: 10%;
+    }
+}
 
 /* MOBILE */
 @media screen and (max-width:1200px) {
@@ -214,14 +331,20 @@ height: 100%;
         padding: 2.5rem;
         margin: 2.5rem;
     }
+
     .logo{
         height: 2.5rem;
         padding-left: .5rem;
     }
+
     .hero{
         height: 40rem;
-        padding: 2.5rem;
+        /* padding: 2.5rem; */
         margin: 2.5rem;
+    }
+
+    .info{
+        padding-left: 2.5rem;
     }
 
     .hamburger-menu {
