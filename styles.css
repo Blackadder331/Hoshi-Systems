@@ -135,20 +135,32 @@ z-index: 10;
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
-background-color: var(--light-color);
+/* background-color: var(--light-color); */
 
 position: absolute;
 width: 3rem;
-height: 2px;
+height: 15px;
 transition-duration: .25s;
+
+background-image:
+      linear-gradient(90deg, #000 25%, transparent 25%),
+      linear-gradient(90deg, transparent 75%, #000 75%),
+      linear-gradient(90deg, transparent 75%, #000 75%),
+      linear-gradient(90deg, #000 25%, var(--brand-green) 25%);    
+
+    background-size:21px 10px;       
+
+    background-position:0 0, 0 0, -50px -50px, 50px 50px;
+
 }
+
 .menu__btn > span::before {
 content: '';
-top: -8px;
+top: -12px;
 }
 .menu__btn > span::after {
 content: '';
-top: 8px;
+top: 12px;
 }
 
 .menu__container {
