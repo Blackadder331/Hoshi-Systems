@@ -11,13 +11,31 @@
     <header>
         <nav>
             <img class="logo" alt="Hoshi Systems">
-            <ol>
+            <!-- <ol>
                 <li>Weapon Systems</li>
                 <li>Ammunition</li>
                 <li>Exploration</li>
                 <li>Robotics</li>
-            </ol>
+            </ol> -->
+
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <div class="menu__container">
+                  <ol class="menu__box">
+                    <li><a class="menu__item" href="#">Weapon Systems</a></li>
+                    <li><a class="menu__item" href="#">Ammunition</a></li>
+                    <li><a class="menu__item" href="#">Exploration</a></li>
+                    <li><a class="menu__item" href="#">Robotics</a></li>
+                  </ol>
+                </div>
+            </div>
         </nav>
+
+
         <section class="hero">
             <div class="info">
                 <h1>Hello</h1>
