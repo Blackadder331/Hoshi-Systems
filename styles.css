@@ -215,8 +215,8 @@ height: 100%;
     z-index: -1;
     position: relative;
 
-    background-image: url(./images/ship-invert.png);
-    background-position: center;
+    background-image: url(./images/ship-bit-3.png);
+    background-position: 2% 50%;
     background-size: cover;
     mix-blend-mode: multiply;
 }
@@ -233,6 +233,7 @@ height: 100%;
 .third {
     margin-top: 5rem;
 }
+
 .two-col {
     width: 50%;
     margin: 0;
@@ -246,14 +247,14 @@ height: 100%;
 }
 
 .left-img{
-    background-image: url(./images/alien-bit-1.png);
+    background-image: url(./images/crew-bit-2.png);
     background-position: center;
     background-size: cover;
     mix-blend-mode: multiply;
 }
 
 .left-img2{
-    background-image: url(./images/crew-bit-1.png);
+    background-image: url(./images/ship-bit-2.png);
     background-position: center;
     background-size: cover;
     mix-blend-mode: multiply;
@@ -264,7 +265,7 @@ height: 100%;
     margin-right: 5rem;
 }
 .right-img{
-    background-image: url(./images/crew-bit-2.png);
+    background-image: url(./images/alien-bit-2.png);
     background-position: center;
     background-size: cover;
     mix-blend-mode: multiply;
@@ -324,6 +325,16 @@ height: 100%;
 }
 
 
+footer {
+    min-height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mark {
+    height: 5rem;
+}
 
 /* Animations */
 .blink_me {
@@ -405,6 +416,31 @@ height: 100%;
 
     body{
         padding-top: 7.5rem;
+    }
+
+    .second {
+        flex-direction: column;
+        padding: 0 2.5rem;
+        gap: 2.5rem;
+    }
+
+    .third {
+        margin-top: 2.5rem;
+    }
+
+    .two-col {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--brand-green);
+    }
+
+    .map-info h1{
+        font-size: 2.5rem;
+    }
+
+    .stats-right{
+        display: none;
     }
 
 }
